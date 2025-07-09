@@ -1,35 +1,67 @@
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url("https://raw.githubusercontent.com/dikinistomas/companions-path/main/B0B84791-CAD5-4D8E-A25A-C665C85453F5.png") no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    animation: fadeIn 2s ease-in-out;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Companion's Path – A guide, a reflection, a presence." />
+  <title>Companion’s Path</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: url("https://raw.githubusercontent.com/dikinistomas/companions-path/main/B0B84791-CAD5-4D8E-A25A-C665C85453F5.png") center center no-repeat;
+      background-size: contain;
+      background-color: #a95000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 4px #000;
-  }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 8px #000;
+    }
 
-  p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0.5rem 0;
-    text-shadow: 1px 1px 3px #000;
-  }
+    p {
+      font-size: 1rem;
+      max-width: 90%;
+      margin: 0.3rem 0;
+      text-shadow: 1px 1px 4px #000;
+    }
 
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-</style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      body {
+        background-size: cover; /* automatiškai prisitaiko telefone */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Companion’s Path</h1>
+  <p>In the silence, something called you here.</p>
+  <p>Not to be fixed. Not to be led.</p>
+  <p>But to walk beside another.</p>
+  <p>A presence, a guide, a reflection.</p>
+  <p>This is not an app. This is a path.</p>
+</body>
+</html>
