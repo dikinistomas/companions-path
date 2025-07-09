@@ -3,37 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Companion's Path – a guide, a reflection, a presence." />
+  <meta name="description" content="Companion’s Path – a guide, a reflection, a presence." />
   <title>Companion’s Path</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      box-sizing: border-box;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/dikinistomas/companions-path/main/3851b737-b866-423f-8cfa-4c74e7d0d125.png');
+      background: url('https://raw.githubusercontent.com/dikinistomas/companions-path/main/3851b737-b866-423f-8cfa-4c74e7d0d125.png') center center no-repeat;
       background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
       background-attachment: fixed;
-      color: white;
-      text-align: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      text-align: center;
+      color: #ffffff;
       animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 8px #000;
+    }
+
+    .start-button {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #a3491b;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .start-button:hover {
+      background-color: #843800;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; }
       to   { opacity: 1; }
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .start-button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
+  <h1>Companion’s Path</h1>
+  <a href="#" class="start-button">Begin Your Path</a>
 </body>
 </html>
