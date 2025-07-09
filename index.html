@@ -6,14 +6,21 @@
   <meta name="description" content="Companion's Path – A guide, a reflection, a presence." />
   <title>Companion’s Path</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      height: 100%;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background: url("https://raw.githubusercontent.com/dikinistomas/companions-path/main/B0B84791-CAD5-4D8E-A25A-C665C85453F5.png") center center no-repeat;
-      background-size: contain;
       background-color: #a95000;
+      background-image: url("https://raw.githubusercontent.com/dikinistomas/companions-path/main/B0B84791-CAD5-4D8E-A25A-C665C85453F5.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto;
+      background-attachment: fixed;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,7 +58,7 @@
       }
 
       body {
-        background-size: cover; /* automatiškai prisitaiko telefone */
+        background-size: 100% auto;
       }
     }
   </style>
