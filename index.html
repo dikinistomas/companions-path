@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Companion’s Path – a guide, a reflection, a presence." />
   <title>Companion’s Path</title>
   <style>
@@ -14,58 +14,69 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/dikinstomas/companions-path/main/490a9836-5d79-419a-80d5-332dc5b8a088.png');
-      background-size: contain;
+      background-image: url('https://raw.githubusercontent.com/dikinistomas/companions-path/main/490a9836-5d79-419a-80d5-332dc5b8a088.png');
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
-      background-position: center center;
-      background-color: #000; /* Juodas fonas už paveiksliuko ribų */
-      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
 
     h1 {
       font-size: 2em;
-      text-shadow: 1px 1px 2px black;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.2em;
     }
 
     p {
-      max-width: 400px;
-      line-height: 1.6;
       margin: 0.2em 0;
-      font-size: 1em;
-      text-shadow: 1px 1px 2px black;
+      max-width: 90%;
     }
 
     .btn {
       margin-top: 1.5em;
-      background-color: #732F00;
-      border: none;
+      padding: 0.6em 1.2em;
+      background-color: #8b3d00;
       color: white;
-      padding: 0.7em 1.4em;
+      border: none;
       border-radius: 20px;
-      cursor: pointer;
       font-size: 1em;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-      transition: background-color 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
     }
 
     .btn:hover {
-      background-color: #a14500;
+      background-color: #a74e10;
+    }
+
+    #message {
+      margin-top: 1.5em;
+      font-style: italic;
+      font-size: 1em;
+      display: none;
     }
   </style>
 </head>
 <body>
   <h1>Companion’s Path</h1>
-  <p>In the silence, something called you here.<br>
-  Not to be fixed. Not to be led.<br>
-  But to walk beside another.</p>
-  <p>A presence, a guide, a reflection.<br>
-  This is not an app. This is a path.</p>
-  <button class="btn">Begin Your Path</button>
+  <p>In the silence, something called you here.</p>
+  <p>Not to be fixed. Not to be led.</p>
+  <p>But to walk beside another.</p>
+  <p>A presence, a guide, a reflection.</p>
+  <p>This is not an app. This is a path.</p>
+
+  <button class="btn" onclick="showMessage()">Begin Your Path</button>
+  <p id="message">Welcome. You're not alone.</p>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
 </body>
 </html>
